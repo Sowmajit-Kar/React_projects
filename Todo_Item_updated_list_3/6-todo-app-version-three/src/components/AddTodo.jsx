@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { TiDocumentAdd } from "react-icons/ti";
 
+
+
 function AddTodo({ onNewItem }) {
   const [todoName, setTodoName] = useState();
   const [dueDate, setDueDate] = useState();
@@ -21,7 +23,10 @@ function AddTodo({ onNewItem }) {
 
   return (
     <div className="container text-center">
-      <div className="row kg-row">
+      
+      
+      <form className="row kg-row">
+        
         <div className="col-6">
           <input
             type="text"
@@ -42,7 +47,8 @@ function AddTodo({ onNewItem }) {
            <TiDocumentAdd />
           </button>
         </div>
-      </div>
+        
+      </form>
     </div>
   );
 }

@@ -1,4 +1,7 @@
 import { RiDeleteBin2Fill } from "react-icons/ri";
+import {TodoItemContext} from "../store/todo-items-store";
+import TodoItem from "./TodoItems";
+import styles from "./TodoItems.module.css";
 
 //import { TiDocumentAdd } from "react-icons/ti";
 
